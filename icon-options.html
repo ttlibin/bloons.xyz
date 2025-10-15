@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloons.xyz 网站图标设计方案</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #FFE66D, #FF6B6B);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #FF6B6B;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .option-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        
+        .option-card:hover {
+            transform: translateY(-5px);
+            border-color: #FF6B6B;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .option-card.selected {
+            border-color: #4ECDC4;
+            background: #e8f8f5;
+        }
+        
+        .icon-preview {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 1rem;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            background: white;
+        }
+        
+        .icon-preview img {
+            width: 80px;
+            height: 80px;
+        }
+        
+        .option-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .option-description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            margin-bottom: 1rem;
+        }
+        
+        .option-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1rem;
+        }
+        
+        .option-features li {
+            padding: 0.3rem 0;
+            color: #666;
+            font-size: 0.8rem;
+        }
+        
+        .option-features li:before {
+            content: "✓ ";
+            color: #4ECDC4;
+            font-weight: bold;
+        }
+        
+        .select-btn {
+            background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+        
+        .select-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .select-btn.selected {
+            background: linear-gradient(135deg, #4ECDC4, #44A08D);
+        }
+        
+        .size-showcase {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .size-showcase h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        
+        .size-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+        }
+        
+        .size-item {
+            text-align: center;
+            padding: 1rem;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid #e9ecef;
+        }
+        
+        .size-label {
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        
+        .size-icon {
+            width: 32px;
+            height: 32px;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .size-icon.large {
+            width: 64px;
+            height: 64px;
+        }
+        
+        .size-icon.xlarge {
+            width: 96px;
+            height: 96px;
+        }
+    </style>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GKGJ4Y5ZN8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GKGJ4Y5ZN8');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>🎈 Bloons.xyz 网站图标设计方案</h1>
+        
+        <div class="options-grid">
+            <!-- 方案1 -->
+            <div class="option-card" data-option="1">
+                <div class="icon-preview">
+                    <img src="favicon-option1.svg" alt="方案1">
+                </div>
+                <div class="option-title">方案1: 经典气球 + 飞镖</div>
+                <div class="option-description">
+                    结合气球和飞镖元素，直接体现游戏核心玩法。色彩鲜明，识别度高。
+                </div>
+                <ul class="option-features">
+                    <li>游戏元素明确</li>
+                    <li>色彩对比强烈</li>
+                    <li>适合小尺寸显示</li>
+                    <li>品牌识别度高</li>
+                </ul>
+                <button class="select-btn" onclick="selectOption(1)">选择此方案</button>
+            </div>
+            
+            <!-- 方案2 -->
+            <div class="option-card" data-option="2">
+                <div class="icon-preview">
+                    <img src="favicon-option2.svg" alt="方案2">
+                </div>
+                <div class="option-title">方案2: 猴子 + 气球</div>
+                <div class="option-description">
+                    突出游戏主角猴子，配合气球元素，体现游戏角色和主题。
+                </div>
+                <ul class="option-features">
+                    <li>角色元素突出</li>
+                    <li>游戏主题明确</li>
+                    <li>可爱风格</li>
+                    <li>适合儿童友好</li>
+                </ul>
+                <button class="select-btn" onclick="selectOption(2)">选择此方案</button>
+            </div>
+            
+            <!-- 方案3 -->
+            <div class="option-card" data-option="3">
+                <div class="icon-preview">
+                    <img src="favicon-option3.svg" alt="方案3">
+                </div>
+                <div class="option-title">方案3: 多个彩色气球</div>
+                <div class="option-description">
+                    展示多个彩色气球，体现游戏的丰富性和挑战性。
+                </div>
+                <ul class="option-features">
+                    <li>色彩丰富</li>
+                    <li>体现游戏挑战</li>
+                    <li>视觉层次感强</li>
+                    <li>适合大尺寸显示</li>
+                </ul>
+                <button class="select-btn" onclick="selectOption(3)">选择此方案</button>
+            </div>
+            
+            <!-- 方案4 -->
+            <div class="option-card" data-option="4">
+                <div class="icon-preview">
+                    <img src="favicon-option4.svg" alt="方案4">
+                </div>
+                <div class="option-title">方案4: 字母B + 气球元素</div>
+                <div class="option-description">
+                    以字母B为主体，配合气球装饰，简洁现代，品牌感强。
+                </div>
+                <ul class="option-features">
+                    <li>品牌标识明确</li>
+                    <li>现代简洁风格</li>
+                    <li>适合各种尺寸</li>
+                    <li>专业感强</li>
+                </ul>
+                <button class="select-btn" onclick="selectOption(4)">选择此方案</button>
+            </div>
+            
+            <!-- 方案5 -->
+            <div class="option-card" data-option="5">
+                <div class="icon-preview">
+                    <img src="favicon-option5.svg" alt="方案5">
+                </div>
+                <div class="option-title">方案5: 爆炸效果气球</div>
+                <div class="option-description">
+                    气球配合爆炸效果，体现游戏的刺激感和成就感。
+                </div>
+                <ul class="option-features">
+                    <li>动感十足</li>
+                    <li>体现游戏快感</li>
+                    <li>视觉冲击力强</li>
+                    <li>吸引注意力</li>
+                </ul>
+                <button class="select-btn" onclick="selectOption(5)">选择此方案</button>
+            </div>
+            
+            <!-- 方案6 -->
+            <div class="option-card" data-option="6">
+                <div class="icon-preview">
+                    <img src="favicon-option6.svg" alt="方案6">
+                </div>
+                <div class="option-title">方案6: 极简风格气球</div>
+                <div class="option-description">
+                    极简设计风格，突出气球的基本形态，简洁优雅。
+                </div>
+                <ul class="option-features">
+                    <li>极简设计</li>
+                    <li>优雅简洁</li>
+                    <li>适合所有尺寸</li>
+                    <li>经典不过时</li>
+                </ul>
+                <button class="select-btn" onclick="selectOption(6)">选择此方案</button>
+            </div>
+        </div>
+        
+        <div class="size-showcase">
+            <h3>不同尺寸显示效果</h3>
+            <div class="size-grid">
+                <div class="size-item">
+                    <div class="size-label">16x16 (Favicon)</div>
+                    <img src="favicon-option1.svg" alt="16x16" class="size-icon">
+                </div>
+                <div class="size-item">
+                    <div class="size-label">32x32 (标准图标)</div>
+                    <img src="favicon-option1.svg" alt="32x32" class="size-icon">
+                </div>
+                <div class="size-item">
+                    <div class="size-label">64x64 (中等图标)</div>
+                    <img src="favicon-option1.svg" alt="64x64" class="size-icon large">
+                </div>
+                <div class="size-item">
+                    <div class="size-label">192x192 (应用图标)</div>
+                    <img src="favicon-option1.svg" alt="192x192" class="size-icon xlarge">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let selectedOption = null;
+        
+        function selectOption(optionNumber) {
+            // 移除所有选中状态
+            document.querySelectorAll('.option-card').forEach(card => {
+                card.classList.remove('selected');
+            });
+            document.querySelectorAll('.select-btn').forEach(btn => {
+                btn.classList.remove('selected');
+                btn.textContent = '选择此方案';
+            });
+            
+            // 设置当前选中状态
+            const selectedCard = document.querySelector(`[data-option="${optionNumber}"]`);
+            const selectedBtn = selectedCard.querySelector('.select-btn');
+            
+            selectedCard.classList.add('selected');
+            selectedBtn.classList.add('selected');
+            selectedBtn.textContent = '✓ 已选择';
+            
+            selectedOption = optionNumber;
+            
+            // 更新尺寸展示
+            updateSizeShowcase(optionNumber);
+        }
+        
+        function updateSizeShowcase(optionNumber) {
+            const sizeIcons = document.querySelectorAll('.size-showcase img');
+            sizeIcons.forEach(img => {
+                img.src = `favicon-option${optionNumber}.svg`;
+            });
+        }
+        
+        // 默认选择方案1
+        selectOption(1);
+    </script>
+</body>
+</html>

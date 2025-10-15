@@ -1,0 +1,28 @@
+<svg width="192" height="192" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <linearGradient id="balloon1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FF6B6B"/>
+            <stop offset="100%" style="stop-color:#FF8E8E"/>
+        </linearGradient>
+        <linearGradient id="balloon2" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#4ECDC4"/>
+            <stop offset="100%" style="stop-color:#7EDDDD"/>
+        </linearGradient>
+        <linearGradient id="balloon3" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FFE66D"/>
+            <stop offset="100%" style="stop-color:#FFF4A3"/>
+        </linearGradient>
+    </defs>
+    <!-- 气球1 -->
+    <circle cx="60" cy="48" r="30" fill="url(#balloon1)" stroke="#fff" stroke-width="3"/>
+    <path d="M60 78 L45 108 L75 108 Z" fill="url(#balloon1)"/>
+    <line x1="60" y1="78" x2="60" y2="120" stroke="#333" stroke-width="3"/>
+    <!-- 气球2 -->
+    <circle cx="132" cy="48" r="30" fill="url(#balloon2)" stroke="#fff" stroke-width="3"/>
+    <path d="M132 78 L117 108 L147 108 Z" fill="url(#balloon2)"/>
+    <line x1="132" y1="78" x2="132" y2="120" stroke="#333" stroke-width="3"/>
+    <!-- 气球3 -->
+    <circle cx="96" cy="96" r="30" fill="url(#balloon3)" stroke="#fff" stroke-width="3"/>
+    <path d="M96 126 L81 156 L111 156 Z" fill="url(#balloon3)"/>
+    <line x1="96" y1="126" x2="96" y2="168" stroke="#333" stroke-width="3"/>
+</svg>

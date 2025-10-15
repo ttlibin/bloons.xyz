@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloons.xyz SVG Icons</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #FFE66D, #FF6B6B);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #FF6B6B;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .icon-card {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            border: 2px solid #e9ecef;
+            transition: transform 0.3s ease;
+        }
+        
+        .icon-card:hover {
+            transform: translateY(-5px);
+            border-color: #FF6B6B;
+        }
+        
+        .icon-preview {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 1rem;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .icon-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        
+        .icon-description {
+            color: #666;
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+        
+        .download-btn {
+            background: linear-gradient(135deg, #FF6B6B, #4ECDC4);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GKGJ4Y5ZN8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GKGJ4Y5ZN8');
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>🎈 Bloons.xyz Icon Designs</h1>
+        
+        <div class="icon-grid">
+            <!-- Icon 1: Classic Balloon -->
+            <div class="icon-card">
+                <div class="icon-preview" style="background: linear-gradient(135deg, #FF6B6B, #4ECDC4);">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <circle cx="30" cy="25" r="15" fill="#FF6B6B" stroke="#fff" stroke-width="2"/>
+                        <path d="M30 40 L25 50 L35 50 Z" fill="#FF6B6B"/>
+                        <line x1="30" y1="40" x2="30" y2="55" stroke="#333" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="icon-title">Classic Balloon</div>
+                <div class="icon-description">
+                    Simple balloon with string. Clean and recognizable.
+                </div>
+                <button class="download-btn" onclick="downloadSVG('balloon')">Download SVG</button>
+            </div>
+            
+            <!-- Icon 2: Balloon with Dart -->
+            <div class="icon-card">
+                <div class="icon-preview" style="background: linear-gradient(135deg, #FFE66D, #FF6B6B);">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <circle cx="30" cy="25" r="15" fill="#FF6B6B" stroke="#fff" stroke-width="2"/>
+                        <path d="M30 40 L25 50 L35 50 Z" fill="#FF6B6B"/>
+                        <line x1="30" y1="40" x2="30" y2="55" stroke="#333" stroke-width="2"/>
+                        <circle cx="45" cy="20" r="8" fill="#FFD700" stroke="#fff" stroke-width="2"/>
+                        <line x1="45" y1="20" x2="30" y2="25" stroke="#333" stroke-width="2"/>
+                    </svg>
+                </div>
+                <div class="icon-title">Balloon + Dart</div>
+                <div class="icon-description">
+                    Balloon with dart/target. Shows game mechanics.
+                </div>
+                <button class="download-btn" onclick="downloadSVG('balloon-dart')">Download SVG</button>
+            </div>
+            
+            <!-- Icon 3: Monkey with Balloon -->
+            <div class="icon-card">
+                <div class="icon-preview" style="background: linear-gradient(135deg, #4ECDC4, #44A08D);">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <circle cx="30" cy="25" r="15" fill="#FF6B6B" stroke="#fff" stroke-width="2"/>
+                        <path d="M30 40 L25 50 L35 50 Z" fill="#FF6B6B"/>
+                        <line x1="30" y1="40" x2="30" y2="55" stroke="#333" stroke-width="2"/>
+                        <circle cx="20" cy="35" r="8" fill="#8B4513" stroke="#fff" stroke-width="2"/>
+                        <circle cx="18" cy="33" r="2" fill="#000"/>
+                        <circle cx="22" cy="33" r="2" fill="#000"/>
+                    </svg>
+                </div>
+                <div class="icon-title">Monkey + Balloon</div>
+                <div class="icon-description">
+                    Features the game's monkey character with balloon.
+                </div>
+                <button class="download-btn" onclick="downloadSVG('monkey-balloon')">Download SVG</button>
+            </div>
+            
+            <!-- Icon 4: Multiple Balloons -->
+            <div class="icon-card">
+                <div class="icon-preview" style="background: linear-gradient(135deg, #8B5CF6, #F59E0B);">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <circle cx="20" cy="20" r="8" fill="#FF6B6B" stroke="#fff" stroke-width="1"/>
+                        <circle cx="40" cy="20" r="8" fill="#4ECDC4" stroke="#fff" stroke-width="1"/>
+                        <circle cx="30" cy="35" r="8" fill="#FFE66D" stroke="#fff" stroke-width="1"/>
+                        <line x1="20" y1="28" x2="20" y2="40" stroke="#333" stroke-width="1"/>
+                        <line x1="40" y1="28" x2="40" y2="40" stroke="#333" stroke-width="1"/>
+                        <line x1="30" y1="43" x2="30" y2="50" stroke="#333" stroke-width="1"/>
+                    </svg>
+                </div>
+                <div class="icon-title">Multiple Balloons</div>
+                <div class="icon-description">
+                    Colorful array of balloons. Shows game variety.
+                </div>
+                <button class="download-btn" onclick="downloadSVG('multiple-balloons')">Download SVG</button>
+            </div>
+            
+            <!-- Icon 5: Minimalist B -->
+            <div class="icon-card">
+                <div class="icon-preview" style="background: linear-gradient(135deg, #1A1A1A, #2C2C2C);">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <text x="30" y="40" font-family="Arial, sans-serif" font-size="36" font-weight="bold" text-anchor="middle" fill="#FFD700">B</text>
+                    </svg>
+                </div>
+                <div class="icon-title">Minimalist B</div>
+                <div class="icon-description">
+                    Clean "B" for Bloons. Professional and scalable.
+                </div>
+                <button class="download-btn" onclick="downloadSVG('minimalist-b')">Download SVG</button>
+            </div>
+            
+            <!-- Icon 6: Burst Effect -->
+            <div class="icon-card">
+                <div class="icon-preview" style="background: linear-gradient(135deg, #FF1493, #00CED1);">
+                    <svg width="60" height="60" viewBox="0 0 60 60">
+                        <circle cx="30" cy="30" r="12" fill="#FF6B6B" stroke="#fff" stroke-width="2"/>
+                        <path d="M30 42 L25 52 L35 52 Z" fill="#FF6B6B"/>
+                        <line x1="30" y1="42" x2="30" y2="55" stroke="#333" stroke-width="2"/>
+                        <path d="M18 18 L12 12 M42 18 L48 12 M18 42 L12 48 M42 42 L48 48" stroke="#FFD700" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="15" cy="15" r="2" fill="#FFD700"/>
+                        <circle cx="45" cy="15" r="2" fill="#FFD700"/>
+                        <circle cx="15" cy="45" r="2" fill="#FFD700"/>
+                        <circle cx="45" cy="45" r="2" fill="#FFD700"/>
+                    </svg>
+                </div>
+                <div class="icon-title">Burst Effect</div>
+                <div class="icon-description">
+                    Balloon with burst/pop effect. Shows game satisfaction.
+                </div>
+                <button class="download-btn" onclick="downloadSVG('burst-effect')">Download SVG</button>
+            </div>
+        </div>
+        
+        <div style="background: #f8f9fa; border-radius: 15px; padding: 2rem; margin-top: 2rem;">
+            <h2 style="color: #333; margin-bottom: 1rem;">Icon Usage Guidelines</h2>
+            <ul style="list-style: none; padding: 0; color: #666;">
+                <li>✓ Favicon (16x16, 32x32, 48x48 pixels)</li>
+                <li>✓ App icon (192x192, 512x512 pixels)</li>
+                <li>✓ Social media profile pictures</li>
+                <li>✓ Website header logo</li>
+                <li>✓ Mobile app icons</li>
+                <li>✓ Print materials and merchandise</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function downloadSVG(type) {
+            const svgContent = getSVGContent(type);
+            const blob = new Blob([svgContent], { type: 'image/svg+xml' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `bloons-icon-${type}.svg`;
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+        
+        function getSVGContent(type) {
+            const svgContents = {
+                'balloon': `<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="balloonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF6B6B"/>
+                            <stop offset="100%" style="stop-color:#4ECDC4"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="256" cy="200" r="120" fill="url(#balloonGrad)" stroke="#fff" stroke-width="8"/>
+                    <path d="M256 320 L200 400 L312 400 Z" fill="url(#balloonGrad)"/>
+                    <line x1="256" y1="320" x2="256" y2="450" stroke="#333" stroke-width="6"/>
+                </svg>`,
+                
+                'balloon-dart': `<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="balloonGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF6B6B"/>
+                            <stop offset="100%" style="stop-color:#4ECDC4"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="256" cy="200" r="120" fill="url(#balloonGrad2)" stroke="#fff" stroke-width="8"/>
+                    <path d="M256 320 L200 400 L312 400 Z" fill="url(#balloonGrad2)"/>
+                    <line x1="256" y1="320" x2="256" y2="450" stroke="#333" stroke-width="6"/>
+                    <circle cx="380" cy="160" r="60" fill="#FFD700" stroke="#fff" stroke-width="6"/>
+                    <line x1="380" y1="160" x2="256" y2="200" stroke="#333" stroke-width="4"/>
+                </svg>`,
+                
+                'monkey-balloon': `<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="balloonGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF6B6B"/>
+                            <stop offset="100%" style="stop-color:#4ECDC4"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="256" cy="200" r="120" fill="url(#balloonGrad3)" stroke="#fff" stroke-width="8"/>
+                    <path d="M256 320 L200 400 L312 400 Z" fill="url(#balloonGrad3)"/>
+                    <line x1="256" y1="320" x2="256" y2="450" stroke="#333" stroke-width="6"/>
+                    <circle cx="160" cy="280" r="60" fill="#8B4513" stroke="#fff" stroke-width="6"/>
+                    <circle cx="150" cy="270" r="12" fill="#000"/>
+                    <circle cx="170" cy="270" r="12" fill="#000"/>
+                </svg>`,
+                
+                'multiple-balloons': `<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="200" cy="180" r="60" fill="#FF6B6B" stroke="#fff" stroke-width="4"/>
+                    <circle cx="312" cy="180" r="60" fill="#4ECDC4" stroke="#fff" stroke-width="4"/>
+                    <circle cx="256" cy="280" r="60" fill="#FFE66D" stroke="#fff" stroke-width="4"/>
+                    <line x1="200" y1="240" x2="200" y2="320" stroke="#333" stroke-width="3"/>
+                    <line x1="312" y1="240" x2="312" y2="320" stroke="#333" stroke-width="3"/>
+                    <line x1="256" y1="340" x2="256" y2="400" stroke="#333" stroke-width="3"/>
+                </svg>`,
+                
+                'minimalist-b': `<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#1A1A1A"/>
+                            <stop offset="100%" style="stop-color:#2C2C2C"/>
+                        </linearGradient>
+                    </defs>
+                    <rect width="512" height="512" fill="url(#bgGrad)" rx="80"/>
+                    <text x="256" y="320" font-family="Arial, sans-serif" font-size="240" font-weight="bold" text-anchor="middle" fill="#FFD700">B</text>
+                </svg>`,
+                
+                'burst-effect': `<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="balloonGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FF6B6B"/>
+                            <stop offset="100%" style="stop-color:#4ECDC4"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="256" cy="256" r="100" fill="url(#balloonGrad4)" stroke="#fff" stroke-width="8"/>
+                    <path d="M256 356 L200 436 L312 436 Z" fill="url(#balloonGrad4)"/>
+                    <line x1="256" y1="356" x2="256" y2="480" stroke="#333" stroke-width="6"/>
+                    <path d="M150 150 L100 100 M362 150 L412 100 M150 362 L100 412 M362 362 L412 412" stroke="#FFD700" stroke-width="8" stroke-linecap="round"/>
+                    <circle cx="120" cy="120" r="12" fill="#FFD700"/>
+                    <circle cx="392" cy="120" r="12" fill="#FFD700"/>
+                    <circle cx="120" cy="392" r="12" fill="#FFD700"/>
+                    <circle cx="392" cy="392" r="12" fill="#FFD700"/>
+                </svg>`
+            };
+            
+            return svgContents[type] || '';
+        }
+    </script>
+</body>
+</html>
